@@ -1,67 +1,111 @@
 <html>
     <head>
-        <title>JS Essentials || Day 2 Assignment</title>
+        <title>Musify || Your Music Player </title>
+        <link rel="stylesheet" href="./music.css">
     </head>
     <body>
-       <script>
-            var num1 = 20;
-            var num2 = 5;
+        <section class="container">
+            <div class="section_1">
+                <header class="header">
+                    <p>Musify</p>
+                </header>
+                <div class="audios">
+                    <div class="audio">
+                        <div class="audio_img">
+                            <img src="./Thumbnails/ignite.jpg">
+                        </div>
+                        <div class="audio_detail">
+                                <h3 class="audio_title">Ignite - Alan Walker</h3>
+                                <button class="btn" onclick="playAudio(1)">Play</button>
+                        </div>
+                    </div>
 
-            // -------Arthematic operations [+,-,*,/,%]-----------
+                    <div class="audio">
+                        <div class="audio_img">
+                            <img src="./Thumbnails/sorry.jfif">
+                        </div>
+                        <div class="audio_detail">
+                                <h3 class="audio_title">Sorry - Justin biber</h3>
+                                <button class="btn" onclick="playAudio(2)">Play</button>
+                        </div>
+                    </div>
 
-            var sum  = num1 + num2;
-            var diffrence  = num1 - num2;
-            var Multiplication  = num1 * num2;
-            var Division  = num1 / num2;
-            var Modulus  = num1 % num2;
-            console.log("Arthematic Operators");
-            console.log("Sum = ",sum,"\nDifference =", diffrence,"\nMultiplipation =", Multiplication,"\nDivision =", Division,"\nModulus =", Modulus);
+                    <div class="audio">
+                        <div class="audio_img">
+                            <img src="./Thumbnails/shape fyou.png">
+                        </div>
+                        <div class="audio_detail">
+                                <h3 class="audio_title">Shape of you - Ed sheeran</h3>
+                                <button class="btn" onclick="playAudio(3)">Play</button>
+                        </div>
+                    </div>
 
-            //----------Assignment operator [=,+=,-=,*=,/=,%=]--------
-            var alpha = 'a';
-            var res1  = num1 += num2;
-            var res2  = num1 -= num2;
-            var res3  = num1 *= num2;
-            var res4  = num1 /= num2;
-            var res5  = num1 %= num2; //Add first and then assign
-            console.log("Assignment Operators");
-            console.log(alpha);
-            console.log("Sum = ",res1,"\nDifference =", res2,"\nMultiplipation =", res3,"\nDivision =", res4,"\nModulus =", res5);
-            
+                    <div class="audio">
+                        <div class="audio_img">
+                            <img src="./Thumbnails/despacito.jfif">
+                        </div>
+                        <div class="audio_detail">
+                                <h3 class="audio_title">Despacito - Luis Fonsi</h3>
+                                <button class="btn" onclick="playAudio(4)">Play</button>
+                        </div>
+                    </div>
 
-              //----------Comparision operator [==,!=,<,>,<=,>=]--------
+                    <div class="audio">
+                        <div class="audio_img">
+                            <img src="./Thumbnails/letmeloveu.jpg">
+                        </div>
+                        <div class="audio_detail">
+                                <h3 class="audio_title">Let me Love you - DJ snake</h3>
+                                <button class="btn" onclick="playAudio(5)">Play</button>
+                        </div>
+                    </div>
 
-              console.log("Comparision Operators");
+                    <div class="audio">
+                        <div class="audio_img">
+                            <img src="./Thumbnails/halloffame.jpg">
+                        </div>
+                        <div class="audio_detail">
+                                <h3 class="audio_title">Hall of Fame - The Script</h3>
+                                <button class="btn" onclick="playAudio(6)">Play</button>
+                        </div>
+                    </div>
+                 
+                    <div class="audio">
+                        <div class="audio_img">
+                            <img src="./Thumbnails/suburban cradels.jpg">
+                        </div>
+                        <div class="audio_detail">
+                                <h3 class="audio_title">Cradels - Sub Urban</h3>
+                                <button class="btn" onclick="playAudio(7)">Play</button>
+                        </div>
+                    </div>
 
-              console.log(num1==num2);
-              console.log(num1!=num2);
-              console.log(num1<num2);
-              console.log(num1>num2);
-              console.log(num1<=num2);
-              console.log(num1>=num2);
+                    <div class="audio">
+                        <div class="audio_img">
+                            <img src="./Thumbnails/thunder.jpg">
+                        </div>
+                        <div class="audio_detail">
+                                <h3 class="audio_title">Thunder - Imagine dragons</h3>
+                                <button class="btn" onclick="playAudio(8)">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="section_2">
+                <div  class="thumbnail">
+                    <img id="Thumbnail" src="./Thumbnails/despacito.jfif">
+                </div>
+                <audio id="song" class="song" src="./Thumbnails/Ignite - Alan Walker- [MyMp3Bhojpuri.In].mp3" controls></audio>
 
-              //----------Identity operator [===,!===]--------
+                <h1 class="audio_player_title" id="audio_player_title">Despacito - Luis Fonsi</h1>
 
-              console.log("Identity Operators");
+            </div>
+        </section>
 
-              console.log(num1===num2);
-              console.log(num1!==num2);
 
-               //----------Logical operator [===,!===]--------
-
-               console.log("Logical Operators");
-
-               console.log(num1<num2 && num1>num2);
-               console.log(num1<num2 || num1>num2);
-               console.log(!false);
-
-               //----------Unary operator [++,--]--------
-               
-               console.log("Unary Operators");
-
-                console.log(num1++,num1--);
-       </script>
-    </body>
-</html>
+       <script src="./music.js"></script>
+       </body>
+</html>       
+       
